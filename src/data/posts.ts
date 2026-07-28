@@ -43,7 +43,7 @@ export function getAllPosts(): Post[] {
 
       return {
         slug,
-        title: data.title || '',
+        title: (data.title || '').replace(/\\/g, '').trim(),
         date: data.date || '',
         categories: data.categories || [],
         categoryLabels: data.categoryLabels || [],
