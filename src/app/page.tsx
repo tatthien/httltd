@@ -64,7 +64,6 @@ export default function Home() {
               <h2 className="text-2xl md:text-3xl font-bold text-[#1c1b1a] tracking-tight">
                 Bài Viết Mới Nhất
               </h2>
-              <p className="text-[#66635d] text-sm mt-3">Tin tức và thông báo từ Hội Thánh</p>
             </div>
           </ScrollReveal>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
