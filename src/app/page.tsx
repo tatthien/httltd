@@ -57,7 +57,7 @@ export default function Home() {
       </section>
 
       {/* Latest Posts Section */}
-      <section className="py-14 md:py-18 bg-white">
+      <section className="py-14 md:py-18 bg-[#f7f6f4]">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
           <ScrollReveal>
             <div className="text-center max-w-2xl mx-auto mb-10">
