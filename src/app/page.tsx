@@ -67,7 +67,7 @@ export default function Home() {
               <p className="text-[#66635d] text-sm mt-3">Tin tức và thông báo từ Hội Thánh</p>
             </div>
           </ScrollReveal>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {recentPosts.map((post) => (
               <ScrollReveal key={post.slug}>
                 <PostCard

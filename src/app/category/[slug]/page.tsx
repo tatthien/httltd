@@ -54,7 +54,7 @@ export default async function CategoryPage({ params }: Props) {
             <p>Chưa có bài viết nào trong chuyên mục này.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {categoryPosts.map((post) => (
               <ScrollReveal key={post.slug}>
                 <PostCard
