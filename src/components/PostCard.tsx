@@ -14,7 +14,6 @@ export default function PostCard({
   title,
   slug,
   date,
-  excerpt,
   thumbnail,
 }: PostCardProps) {
   const postUrl = `/bai-viet/${slug}`;
@@ -36,12 +35,6 @@ export default function PostCard({
             {title}
           </Link>
         </h3>
-
-        {excerpt && (
-          <p className="text-xs text-[#55524d] leading-relaxed mb-3">
-            {excerpt.length > 100 ? `${excerpt.substring(0, 100)}...` : excerpt}
-          </p>
-        )}
 
         <div className="text-xs text-[#a38a35] font-medium mb-4 mt-auto">
           <time dateTime={date}>{formattedDate}</time>
