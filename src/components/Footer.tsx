@@ -10,7 +10,7 @@ export default function Footer() {
           <div className="flex flex-col gap-4">
             <h4 className="text-sm font-bold uppercase tracking-widest text-white mb-1">HTTL Thủ Đức</h4>
             <p className="max-w-md text-sm text-[#a39f97] leading-relaxed">
-              Kênh thông tin trực tuyến chính thức của Hội Thánh Tin Lành - Chi hội Thủ Đức. Mọi người đều được chào đón để cùng thờ phượng và tìm hiểu về Chúa Cứu Thế Giê-xu.
+              Đây là kênh thông tin trực tuyến chính thức của Hội Thánh Tin Lành - Chi hội Thủ Đức, được xây dựng và trực tiếp quản lý thông tin bởi Ban Truyền Thông, thuộc HTTL Chi Hội Thủ Đức.
             </p>
           </div>
           
