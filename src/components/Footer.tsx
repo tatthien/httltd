@@ -39,7 +39,7 @@ export default function Footer() {
         </div>
         
         <div className="pt-8 border-t border-[#262523] text-center text-xs text-[#736f68]">
-          <p>&copy; {currentYear} Hội Thánh Tin Lành Thủ Đức. Đã đăng ký bản quyền.</p>
+          <p>&copy; {currentYear} Hội Thánh Tin Lành Thủ Đức.</p>
         </div>
       </div>
     </footer>
