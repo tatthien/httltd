@@ -48,8 +48,12 @@ export default function Header() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 bg-[#1c1b1a] text-white transition-all duration-300 ${isScrolled ? 'shadow-md' : ''}`}>
       <div className="max-w-6xl mx-auto px-4 md:px-6 h-[70px] md:h-[80px] flex items-center justify-between">
-        <Link href="/" className="text-xl md:text-2xl font-bold tracking-wider uppercase text-white flex items-center gap-1">
-          HTTL<span className="text-[#bca141]">Thủ Đức</span>
+        <Link href="/" className="flex items-center py-1">
+          <img 
+            src="/images/logo.png" 
+            alt="Hội Thánh Tin Lành Việt Nam - Chi Hội Thủ Đức" 
+            className="h-9 md:h-11 w-auto brightness-0 invert"
+          />
         </Link>
 
         {/* Desktop Nav */}
