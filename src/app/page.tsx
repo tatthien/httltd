@@ -28,7 +28,7 @@ export default function Home() {
       {/* Hero Section */}
       <section 
         className="relative bg-fixed bg-cover bg-center text-white py-16 md:py-22 px-4 text-center overflow-hidden flex items-center justify-center"
-        style={{ backgroundImage: `url('https://picsum.photos/1600/900')` }}
+        style={{ backgroundImage: `url('/images/service-schedule-bg.jpg')` }}
       >
         <div className="absolute inset-0 bg-[#1c1b1a]/85"></div>
         <div className="relative z-10 max-w-3xl mx-auto w-full flex flex-col items-center">
