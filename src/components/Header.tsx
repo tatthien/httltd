@@ -46,13 +46,13 @@ export default function Header() {
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 bg-[#1c1b1a] text-white transition-all duration-300 ${isScrolled ? 'shadow-md' : ''}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 bg-white text-[#1c1b1a] border-b border-[#e6e4df] transition-all duration-300 ${isScrolled ? 'shadow-xs' : ''}`}>
       <div className="max-w-6xl mx-auto px-4 md:px-6 h-[70px] md:h-[80px] flex items-center justify-between">
         <Link href="/" className="flex items-center py-1">
           <img 
             src="/images/logo.png" 
             alt="Hội Thánh Tin Lành Việt Nam - Chi Hội Thủ Đức" 
-            className="h-9 md:h-11 w-auto brightness-0 invert"
+            className="h-9 md:h-11 w-auto"
           />
         </Link>
 
@@ -65,7 +65,7 @@ export default function Header() {
                 key={item.href} 
                 href={item.href}
                 className={`text-xs uppercase tracking-widest font-medium py-2 transition-colors ${
-                  isActive ? 'text-[#bca141] font-bold' : 'text-[#d8d5ce] hover:text-white'
+                  isActive ? 'text-[#bca141] font-bold' : 'text-[#4a4844] hover:text-[#1c1b1a]'
                 }`}
               >
                 {item.label}
@@ -76,7 +76,7 @@ export default function Header() {
 
         {/* Hamburger */}
         <button 
-          className="lg:hidden flex items-center justify-center w-10 h-10 text-2xl text-white rounded-md hover:bg-[#2d2c2a] transition-colors" 
+          className="lg:hidden flex items-center justify-center w-10 h-10 text-2xl text-[#1c1b1a] rounded-md hover:bg-[#f7f6f4] transition-colors" 
           onClick={toggleMobileMenu}
           aria-label="Toggle Menu"
         >
@@ -85,7 +85,7 @@ export default function Header() {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`fixed top-[70px] md:top-[80px] left-0 right-0 bottom-0 h-[calc(100vh-70px)] md:h-[calc(100vh-80px)] bg-[#1c1b1a] p-6 transition-all duration-300 z-40 overflow-y-auto shadow-2xl ${
+      <div className={`fixed top-[70px] md:top-[80px] left-0 right-0 bottom-0 h-[calc(100vh-70px)] md:h-[calc(100vh-80px)] bg-white p-6 transition-all duration-300 z-40 overflow-y-auto shadow-xl ${
         isMobileMenuOpen ? 'translate-y-0 opacity-100 pointer-events-auto' : '-translate-y-full opacity-0 pointer-events-none'
       }`}>
         <nav className="flex flex-col">
@@ -95,8 +95,8 @@ export default function Header() {
               <Link 
                 key={item.href} 
                 href={item.href}
-                className={`text-base uppercase tracking-wider py-4 flex items-center justify-between transition-colors ${
-                  isActive ? 'text-[#bca141] font-bold' : 'text-[#d8d5ce] font-medium'
+                className={`text-base uppercase tracking-wider py-4 border-b border-[#f0eee8] flex items-center justify-between transition-colors ${
+                  isActive ? 'text-[#bca141] font-bold' : 'text-[#4a4844] font-medium hover:text-[#1c1b1a]'
                 }`}
                 onClick={closeMobileMenu}
               >
