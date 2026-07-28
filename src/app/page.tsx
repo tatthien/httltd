@@ -4,7 +4,7 @@ import PostCard from '@/components/PostCard';
 import ScrollReveal from '@/components/ScrollReveal';
 
 export default function Home() {
-  const recentPosts = getAllPosts().slice(0, 8);
+  const recentPosts = getAllPosts().slice(0, 6);
 
   return (
     <main>
