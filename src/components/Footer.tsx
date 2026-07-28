@@ -1,0 +1,47 @@
+import Link from 'next/link';
+
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-[#141413] text-[#a39f97] py-16">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          <div className="flex flex-col gap-4">
+            <h4 className="text-sm font-bold uppercase tracking-widest text-white mb-1">HTTL Thủ Đức</h4>
+            <p className="max-w-md text-sm text-[#a39f97] leading-relaxed">
+              Kênh thông tin trực tuyến chính thức của Hội Thánh Tin Lành - Chi hội Thủ Đức. Mọi người đều được chào đón để cùng thờ phượng và tìm hiểu về Chúa Cứu Thế Giê-xu.
+            </p>
+          </div>
+          
+          <div className="flex flex-col gap-4">
+            <h4 className="text-sm font-bold uppercase tracking-widest text-white mb-1">Liên Hệ</h4>
+            <div className="text-sm text-[#a39f97]">
+              156 Tô Ngọc Vân, Linh Đông, Thủ Đức, Hồ Chí Minh
+            </div>
+            <div className="text-sm text-[#a39f97]">
+              +8428 6686 3485
+            </div>
+            <div className="text-sm text-[#a39f97]">
+              truyenthonghttd@gmail.com
+            </div>
+          </div>
+          
+          <div className="flex flex-col gap-2.5">
+            <h4 className="text-sm font-bold uppercase tracking-widest text-white mb-1">Liên Kết Nhanh</h4>
+            <Link href="/" className="text-sm hover:text-[#bca141] transition-colors">Trang Chủ</Link>
+            <Link href="/luoc-su-hoi-thanh" className="text-sm hover:text-[#bca141] transition-colors">Lược Sử Hội Thánh</Link>
+            <Link href="/category/thong-bao" className="text-sm hover:text-[#bca141] transition-colors">Thông Báo</Link>
+            <Link href="/category/tin-tuc" className="text-sm hover:text-[#bca141] transition-colors">Tin Tức</Link>
+            <Link href="/category/bai-hoc" className="text-sm hover:text-[#bca141] transition-colors">Bài Học</Link>
+            <Link href="/dang-hien" className="text-sm hover:text-[#bca141] transition-colors">Dâng Hiến</Link>
+          </div>
+        </div>
+        
+        <div className="pt-8 border-t border-[#262523] text-center text-xs text-[#736f68]">
+          <p>&copy; {currentYear} Hội Thánh Tin Lành Thủ Đức. Đã đăng ký bản quyền.</p>
+        </div>
+      </div>
+    </footer>
+  );
+}
