@@ -82,11 +82,11 @@ export default async function BlogPostPage({ params }: Props) {
 
       {/* Centered Image */}
       <div className="max-w-3xl mx-auto px-4 md:px-6 mb-12">
-        <div className="w-full aspect-16/10 rounded-md overflow-hidden bg-[#f7f6f4] shadow-2xs">
+        <div className="w-full rounded-md overflow-hidden bg-[#f7f6f4] shadow-2xs">
           <img 
             src={post.thumbnail || 'https://picsum.photos/800/500'} 
             alt={post.title} 
-            className="w-full h-full object-cover"
+            className="w-full h-auto block"
           />
         </div>
       </div>
