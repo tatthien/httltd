@@ -36,7 +36,7 @@ export default async function CategoryPage({ params }: Props) {
   const categoryPosts = getPostsByCategory(slug);
 
   return (
-    <main className="bg-[#f7f6f4] min-h-screen py-10 md:py-14">
+    <div className="bg-[#f7f6f4] min-h-screen py-10 md:py-14">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <ScrollReveal>
           <div className="mb-8">
@@ -71,6 +71,6 @@ export default async function CategoryPage({ params }: Props) {
           </div>
         )}
       </div>
-    </main>
+    </div>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "Hội Thánh Tin Lành Thủ Đức",
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="vi">
       <body>
+        <ScrollToTop />
         <Header />
         <main className="pt-[70px] md:pt-[80px] min-h-[calc(100vh-300px)]">
           {children}

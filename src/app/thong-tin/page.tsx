@@ -60,7 +60,7 @@ const ministries = [
 
 export default function ThongTinPage() {
   return (
-    <main>
+    <div>
       <PageHero title="Thông Tin Các Ban Ngành" />
 
       <section className="py-12 md:py-16">
@@ -84,6 +84,6 @@ export default function ThongTinPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

@@ -53,7 +53,7 @@ export default async function BlogPostPage({ params }: Props) {
     : [];
 
   return (
-    <main className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen">
       {/* Title & One-line Metadata Header */}
       <div className="max-w-4xl mx-auto px-4 md:px-6 pt-10 md:pt-14 pb-8 text-center">
         <h1 className="text-3xl md:text-5xl font-bold text-[#1c1b1a] tracking-tight leading-tight mb-4">
@@ -135,6 +135,6 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </section>
       )}
-    </main>
+    </div>
   );
 }

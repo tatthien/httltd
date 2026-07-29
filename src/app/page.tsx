@@ -7,7 +7,7 @@ export default function Home() {
   const recentPosts = getAllPosts().slice(0, 6);
 
   return (
-    <main>
+    <div>
       {/* YouTube Live Stream Section */}
       <section className="py-10 md:py-14 bg-[#f7f6f4]">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
@@ -83,6 +83,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

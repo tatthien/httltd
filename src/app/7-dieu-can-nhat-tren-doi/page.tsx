@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function BayDieuPage() {
   return (
-    <main>
+    <div>
       <PageHero title="7 Điều Cần Nhất Trên Đời" subtitle="Những điều bạn thật sự cần trong cuộc sống" />
 
       <section className="section">
@@ -122,6 +122,6 @@ export default function BayDieuPage() {
           </article>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

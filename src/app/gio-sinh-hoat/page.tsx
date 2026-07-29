@@ -84,7 +84,7 @@ const schedule = [
 
 export default function GioSinhHoatPage() {
   return (
-    <main>
+    <div>
       <PageHero title="Giờ Sinh Hoạt" />
 
       <section className="py-12 md:py-16 bg-[#faf9f6]">
@@ -112,6 +112,6 @@ export default function GioSinhHoatPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

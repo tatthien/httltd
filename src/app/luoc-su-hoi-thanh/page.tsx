@@ -87,7 +87,7 @@ const timelineEvents = [
 
 export default function LuocSuPage() {
   return (
-    <main>
+    <div>
       <PageHero title="Lược Sử Hội Thánh" />
 
       <section className="py-14 md:py-20 bg-white">
@@ -118,6 +118,6 @@ export default function LuocSuPage() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
