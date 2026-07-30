@@ -14,6 +14,8 @@ export default function PostCard({
   title,
   slug,
   date,
+  categoryLabels,
+  excerpt,
   thumbnail,
 }: PostCardProps) {
   const postUrl = `/bai-viet/${slug}`;
@@ -28,27 +30,35 @@ export default function PostCard({
   });
 
   return (
-    <article className="group bg-white rounded-md p-5 shadow-2xs hover:shadow-md transition-all duration-200 h-full flex flex-col justify-between">
-      <div className="flex flex-col mb-3">
-        <h3 className="text-base font-bold leading-snug mb-1.5">
-          <Link href={postUrl} className="text-[#1c1b1a] group-hover:text-[#bca141] transition-colors">
+    <article className="group bg-white rounded-sm border border-[#e6e4df] overflow-hidden h-full flex flex-col transition-colors duration-150 hover:border-[#c9c5bb]">
+      <Link href={postUrl} className="block relative w-full aspect-16/10 overflow-hidden bg-[#f7f6f4] shrink-0">
+        <img 
+          src={displayThumbnail} 
+          alt={title} 
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+      </Link>
+
+      <div className="flex flex-col p-5 flex-1">
+        <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-[#69655d] font-medium mb-2">
+          {categoryLabels?.[0] && <span>{categoryLabels[0]}</span>}
+          {categoryLabels?.[0] && <span aria-hidden="true">·</span>}
+          <time dateTime={date}>{formattedDate}</time>
+        </div>
+
+        <h3 className="text-lg font-bold leading-snug mb-2">
+          <Link href={postUrl} className="text-[#1c1b1a] group-hover:underline decoration-[#bca141] underline-offset-4">
             {title}
           </Link>
         </h3>
 
-        <div className="text-xs text-[#a38a35] font-medium">
-          <time dateTime={date}>{formattedDate}</time>
-        </div>
+        {excerpt && (
+          <p className="text-sm text-[#5f5b54] leading-relaxed line-clamp-2">
+            {excerpt}
+          </p>
+        )}
       </div>
-
-      <Link href={postUrl} className="block relative w-full aspect-16/10 rounded-sm overflow-hidden bg-[#f7f6f4] shrink-0 mt-auto">
-        <img 
-          src={displayThumbnail} 
-          alt={title} 
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-          loading="lazy"
-        />
-      </Link>
     </article>
   );
 }

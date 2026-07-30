@@ -65,20 +65,20 @@ export default function ThongTinPage() {
 
       <section className="py-12 md:py-16">
         <div className="max-w-6xl mx-auto px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12">
             {ministries.map((ministry, idx) => (
               <ScrollReveal key={idx}>
-                <div className="bg-white rounded-xl overflow-hidden shadow-xs flex flex-col h-full">
-                  <div className="p-6 bg-[#faf8f5]">
-                    <h3 className="text-xl font-bold text-slate-900 mb-2">{ministry.name}</h3>
-                    <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#a38a35] font-semibold">
+                <article className="border-t border-[#d9d6cf] pt-5">
+                  <header className="mb-4">
+                    <h3 className="text-xl font-bold text-[#1c1b1a] mb-1">{ministry.name}</h3>
+                    <div className="text-sm text-[#5f5b54] font-semibold">
                       <span>{ministry.schedule}</span>
                     </div>
-                  </div>
-                  <div className="p-6 text-slate-600 text-sm leading-relaxed flex-1">
+                  </header>
+                  <div className="text-[#4a4844] text-sm leading-relaxed">
                     <p>{ministry.description}</p>
                   </div>
-                </div>
+                </article>
               </ScrollReveal>
             ))}
           </div>

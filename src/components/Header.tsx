@@ -64,8 +64,8 @@ export default function Header() {
               <Link 
                 key={item.href} 
                 href={item.href}
-                className={`text-xs uppercase tracking-widest font-medium py-2 transition-colors ${
-                  isActive ? 'text-[#bca141] font-bold' : 'text-[#4a4844] hover:text-[#1c1b1a]'
+                className={`text-sm font-medium py-2 border-b-2 transition-colors ${
+                  isActive ? 'text-[#1c1b1a] border-[#bca141] font-semibold' : 'text-[#4a4844] border-transparent hover:text-[#1c1b1a]'
                 }`}
               >
                 {item.label}
@@ -95,8 +95,8 @@ export default function Header() {
               <Link 
                 key={item.href} 
                 href={item.href}
-                className={`text-base uppercase tracking-wider py-4 border-b border-[#f0eee8] flex items-center justify-between transition-colors ${
-                  isActive ? 'text-[#bca141] font-bold' : 'text-[#4a4844] font-medium hover:text-[#1c1b1a]'
+                className={`text-base py-4 border-b border-[#f0eee8] flex items-center justify-between transition-colors ${
+                  isActive ? 'text-[#1c1b1a] font-bold' : 'text-[#4a4844] font-medium hover:text-[#1c1b1a]'
                 }`}
                 onClick={closeMobileMenu}
               >

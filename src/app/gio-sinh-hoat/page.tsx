@@ -94,15 +94,13 @@ export default function GioSinhHoatPage() {
               <ScrollReveal key={idx}>
                 <div className="bg-white rounded-sm overflow-hidden shadow-2xs">
                   <div className={`py-2.5 px-5 flex items-center gap-3 ${item.highlight ? 'bg-[#1c1b1a] text-white' : 'bg-[#f7f6f4]'}`}>
-                    <h3 className={`font-bold text-sm uppercase tracking-wider ${item.highlight ? 'text-[#bca141]' : 'text-[#1c1b1a]'}`}>{item.day}</h3>
+                    <h3 className={`font-bold text-base ${item.highlight ? 'text-[#d8c168]' : 'text-[#1c1b1a]'}`}>{item.day}</h3>
                   </div>
                   <div className="p-3 md:p-4 px-5 flex flex-col gap-1">
                     {item.activities.map((activity, aIdx) => (
-                      <div key={aIdx} className="flex gap-4 py-1.5 items-center">
-                        {activity.time && (
-                          <span className="font-bold text-[#a38a35] text-xs uppercase tracking-wider min-w-[110px] shrink-0">{activity.time}</span>
-                        )}
-                        <span className="text-[#2d2c2a] text-sm leading-tight">{activity.name}</span>
+                      <div key={aIdx} className="grid grid-cols-[96px_minmax(0,1fr)] sm:grid-cols-[110px_minmax(0,1fr)] gap-2 sm:gap-4 py-1.5 items-start">
+                        <span className="font-semibold text-[#4a4844] text-xs sm:text-sm tabular-nums leading-snug">{activity.time}</span>
+                        <span className="text-[#2d2c2a] text-sm leading-snug">{activity.name}</span>
                       </div>
                     ))}
                   </div>
