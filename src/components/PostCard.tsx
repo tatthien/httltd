@@ -48,7 +48,7 @@ export default function PostCard({
         </div>
 
         <h3 className="text-lg font-bold leading-snug mb-2">
-          <Link href={postUrl} className="text-[#1c1b1a] group-hover:underline decoration-[#bca141] underline-offset-4">
+          <Link href={postUrl} className="text-[#1c1b1a] group-hover:underline decoration-primary underline-offset-4">
             {title}
           </Link>
         </h3>

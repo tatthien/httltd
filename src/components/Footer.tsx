@@ -29,12 +29,12 @@ export default function Footer() {
           
           <div className="flex flex-col gap-2.5">
             <h4 className="text-base font-bold text-white mb-1">Liên kết nhanh</h4>
-            <Link href="/" className="text-sm hover:text-[#bca141] transition-colors">Trang Chủ</Link>
-            <Link href="/luoc-su-hoi-thanh" className="text-sm hover:text-[#bca141] transition-colors">Lược Sử Hội Thánh</Link>
-            <Link href="/category/thong-bao" className="text-sm hover:text-[#bca141] transition-colors">Thông Báo</Link>
-            <Link href="/category/tin-tuc" className="text-sm hover:text-[#bca141] transition-colors">Tin Tức</Link>
-            <Link href="/category/bai-hoc" className="text-sm hover:text-[#bca141] transition-colors">Bài Học</Link>
-            <Link href="/dang-hien" className="text-sm hover:text-[#bca141] transition-colors">Dâng Hiến</Link>
+            <Link href="/" className="text-sm hover:text-primary-light transition-colors">Trang Chủ</Link>
+            <Link href="/luoc-su-hoi-thanh" className="text-sm hover:text-primary-light transition-colors">Lược Sử Hội Thánh</Link>
+            <Link href="/category/thong-bao" className="text-sm hover:text-primary-light transition-colors">Thông Báo</Link>
+            <Link href="/category/tin-tuc" className="text-sm hover:text-primary-light transition-colors">Tin Tức</Link>
+            <Link href="/category/bai-hoc" className="text-sm hover:text-primary-light transition-colors">Bài Học</Link>
+            <Link href="/dang-hien" className="text-sm hover:text-primary-light transition-colors">Dâng Hiến</Link>
           </div>
         </div>
         

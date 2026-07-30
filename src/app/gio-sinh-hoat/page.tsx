@@ -94,7 +94,7 @@ export default function GioSinhHoatPage() {
               <ScrollReveal key={idx}>
                 <div className="bg-white rounded-sm overflow-hidden shadow-2xs">
                   <div className={`py-2.5 px-5 flex items-center gap-3 ${item.highlight ? 'bg-[#1c1b1a] text-white' : 'bg-[#f7f6f4]'}`}>
-                    <h3 className={`font-bold text-base ${item.highlight ? 'text-[#d8c168]' : 'text-[#1c1b1a]'}`}>{item.day}</h3>
+                    <h3 className={`font-bold text-base ${item.highlight ? 'text-primary-light' : 'text-[#1c1b1a]'}`}>{item.day}</h3>
                   </div>
                   <div className="p-3 md:p-4 px-5 flex flex-col gap-1">
                     {item.activities.map((activity, aIdx) => (

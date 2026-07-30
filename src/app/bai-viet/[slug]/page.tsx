@@ -69,7 +69,7 @@ export default async function BlogPostPage({ params }: Props) {
                   <Link
                     key={idx}
                     href={`/category/${post.categories[idx]}`}
-                    className="text-[#bca141] font-bold hover:underline ml-1"
+                    className="text-primary font-bold hover:underline ml-1"
                   >
                     {label}
                   </Link>

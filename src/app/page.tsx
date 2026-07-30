@@ -21,18 +21,18 @@ export default function Home() {
           <p className="text-white/80 text-base md:text-lg mb-7">Chúa Nhật hàng tuần</p>
           <div className="flex items-center justify-center gap-6 md:gap-10 border-y border-white/20 py-5 mb-8 flex-wrap w-full max-w-xl">
             <div className="flex flex-col items-center gap-1">
-              <span className="text-sm text-[#d8c168] font-semibold">Lễ 1</span>
+              <span className="text-sm text-primary-light font-semibold">Lễ 1</span>
               <span className="text-xl md:text-2xl font-bold text-white">06:00 – 08:00</span>
             </div>
             <div className="w-[1px] h-10 bg-white/20 hidden sm:block"></div>
             <div className="flex flex-col items-center gap-1">
-              <span className="text-sm text-[#d8c168] font-semibold">Lễ 2</span>
+              <span className="text-sm text-primary-light font-semibold">Lễ 2</span>
               <span className="text-xl md:text-2xl font-bold text-white">09:00 – 11:00</span>
             </div>
           </div>
           <Link 
             href="/gio-sinh-hoat" 
-            className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-xs bg-[#bca141] text-[#1c1b1a] hover:bg-[#a38a35] transition-colors"
+            className="inline-flex items-center justify-center px-6 py-3 text-sm font-semibold rounded-xs bg-primary text-white hover:bg-primary-dark transition-colors"
           >
             Xem giờ sinh hoạt
           </Link>
@@ -55,7 +55,7 @@ export default function Home() {
                   href="https://www.youtube.com/@hoithanhthuduc/streams"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-block mt-4 text-sm font-semibold text-[#1c1b1a] underline decoration-[#bca141] underline-offset-4"
+                  className="inline-block mt-4 text-sm font-semibold text-[#1c1b1a] underline decoration-primary underline-offset-4"
                 >
                   Xem các buổi phát trực tiếp
                 </a>

@@ -65,7 +65,7 @@ export default function Header() {
                 key={item.href} 
                 href={item.href}
                 className={`text-sm font-medium py-2 border-b-2 transition-colors ${
-                  isActive ? 'text-[#1c1b1a] border-[#bca141] font-semibold' : 'text-[#4a4844] border-transparent hover:text-[#1c1b1a]'
+                  isActive ? 'text-[#1c1b1a] border-primary font-semibold' : 'text-[#4a4844] border-transparent hover:text-[#1c1b1a]'
                 }`}
               >
                 {item.label}
