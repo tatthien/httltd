@@ -38,7 +38,7 @@ export function getAllPosts(): Post[] {
       const fileContents = fs.readFileSync(fullPath, 'utf8');
 
       const { data, content } = matter(fileContents);
-      const cleanContent = content.trim().replace(/^(?:#|##)\s+.*?\n+/, '');
+      const cleanContent = content.trim();
       const image = data.featuredImage || data.thumbnail || data.coverImage || 'https://picsum.photos/400/250';
 
       return {

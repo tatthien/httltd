@@ -75,6 +75,26 @@
   color: #4a4844;
 }
 
+.post-content a {
+  color: #7a651c;
+  text-decoration: underline;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: color 150ms ease, text-decoration-color 150ms ease;
+}
+
+.post-content a:hover {
+  color: #1c1b1a;
+  text-decoration-color: currentColor;
+}
+
+.post-content a:focus-visible {
+  outline: 2px solid #bca141;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 .post-content ul {
   list-style-type: disc;
   padding-left: 1.5rem;
