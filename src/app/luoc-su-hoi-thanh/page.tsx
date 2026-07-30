@@ -15,7 +15,7 @@ export default function LuocSuPage() {
       <section className="py-14 md:py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 md:px-6">
           <ScrollReveal>
-            <div className="post-content clearfix text-[#333] text-base md:text-lg leading-relaxed space-y-5">
+            <div className="post-content history-content clearfix text-[#333] text-base md:text-lg leading-relaxed space-y-5">
               <p>
                 Quận Thủ Đức, một địa danh nổi tiếng trong tỉnh Gia Định xưa; Trước năm 1975, Quận Thủ Đức với những cánh đồng lúa vàng trĩu hạt, những khu vườn cây ăn trái xum xuê, rừng cao su xanh ngát và những nhà máy kỹ nghệ thuộc vào loại lớn nhất thời bấy giờ như: Xi Măng Hà Tiên, Sữa hộp FOREMOST, Dệt VIMYTEX, Nhiệt Điện Thủ Đức . . . cùng không ít trường học từ Tiểu học đến Đại học. Ngày nay, Quận Thủ Đức thuộc thành phố Hồ Chí Minh, với hoạt động kinh tế đa dạng nên được các nhà đầu tư trong và ngoài nước đang quan tâm đầu tư trên nhiều mặt.
               </p>
@@ -63,7 +63,7 @@ export default function LuocSuPage() {
               <div className="clear-both" />
 
               {/* 3. alignleft */}
-              <figure className="my-3 sm:float-left sm:mr-6 sm:mb-4 w-full sm:w-[220px] flex flex-col items-center">
+              <figure className="history-list-figure my-3 sm:float-left sm:mr-6 sm:mb-4 w-full sm:w-[220px] flex flex-col items-center">
                 <img src="/images/luoc-su/1954.jpg" alt="Nhà thờ năm 1954" className="rounded-md shadow-xs w-full h-auto" />
                 <figcaption className="text-sm text-[#75726b] mt-2 italic text-center">Nhà thờ năm 1954</figcaption>
               </figure>
