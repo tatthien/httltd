@@ -62,7 +62,7 @@ export default function Home() {
               </div>
               <div className="relative w-full aspect-video rounded-sm overflow-hidden border border-[#e6e4df] bg-[#1c1b1a]">
                 <iframe
-                  src="https://www.youtube.com/embed/5ldIQY6-XPM"
+                  src="https://www.youtube.com/embed/LqnmAvCswTo"
                   title="Hội Thánh Tin Lành Thủ Đức - Trực Tuyến"
                   className="absolute top-0 left-0 w-full h-full border-0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
