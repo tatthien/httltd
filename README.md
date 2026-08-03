@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hội Thánh Tin Lành Thủ Đức Website
 
-## Getting Started
+This repository contains the website for Hội Thánh Tin Lành Thủ Đức. It is built with Next.js and hosted on Vercel.
 
-First, run the development server:
+The original website was built with WordPress. Its posts and media have been migrated into this repository, with the WordPress content treated as the canonical source during migration.
+
+## Tech Stack
+
+- Next.js 16 with the App Router
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- MDX with `next-mdx-remote`
+- Vercel hosting
+
+## Requirements
+
+- Node.js 20.9 or later
+- npm
+
+## Installation
+
+Clone the repository and install its dependencies:
+
+```bash
+git clone git@github.com:tatthien/httltd.git
+cd httltd
+npm install
+```
+
+No environment variables are currently required for local development.
+
+## Development
+
+Start the local development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in a browser. Changes to application files and MDX posts are reflected automatically during development.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Posts are stored as MDX files in `content/posts`. Each post contains YAML frontmatter for metadata such as its title, publication date, author, category, excerpt, and featured image.
 
-## Learn More
+Post images are stored in `public/images/posts`. Paths referenced from MDX should begin with `/images/posts/`.
 
-To learn more about Next.js, take a look at the following resources:
+The dynamic post and category routes are located at:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/app/bai-viet/[slug]/page.tsx`
+- `src/app/category/[slug]/page.tsx`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Available Commands
 
-## Deploy on Vercel
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Create a production build |
+| `npm run start` | Run the production build locally |
+| `npm run lint` | Run ESLint |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The website is hosted on Vercel. Vercel builds the application with `npm run build`.
+
+Before deploying, verify the project locally:
+
+```bash
+npm run lint
+npm run build
+```
+
+When the Vercel project is connected to this GitHub repository, pushes to its configured production branch trigger a new deployment.
