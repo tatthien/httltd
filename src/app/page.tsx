@@ -22,12 +22,12 @@ export default function Home() {
           <div className="flex items-center justify-center gap-6 md:gap-10 border-y border-white/20 py-5 mb-8 flex-wrap w-full max-w-xl">
             <div className="flex flex-col items-center gap-1">
               <span className="text-sm text-primary-light font-semibold">Lễ 1</span>
-              <span className="text-xl md:text-2xl font-bold text-white">06:00 – 08:00</span>
+              <span className="text-xl md:text-2xl font-bold text-white">06:00 – 07:30</span>
             </div>
             <div className="w-[1px] h-10 bg-white/20 hidden sm:block"></div>
             <div className="flex flex-col items-center gap-1">
               <span className="text-sm text-primary-light font-semibold">Lễ 2</span>
-              <span className="text-xl md:text-2xl font-bold text-white">09:00 – 11:00</span>
+              <span className="text-xl md:text-2xl font-bold text-white">09:00 – 10:30</span>
             </div>
           </div>
           <Link 
