@@ -1,5 +1,7 @@
 # Hội Thánh Tin Lành Thủ Đức Website
 
+![Hội Thánh Tin Lành Thủ Đức homepage](docs/images/homepage.png)
+
 This repository contains the website for Hội Thánh Tin Lành Thủ Đức. It is built with Next.js and hosted on Vercel.
 
 The original website was built with WordPress. Its posts and media have been migrated into this repository, with the WordPress content treated as the canonical source during migration.
