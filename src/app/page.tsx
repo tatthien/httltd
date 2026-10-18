@@ -52,7 +52,7 @@ export default function Home() {
                   Xem lại buổi thờ phượng gần nhất trên kênh YouTube chính thức của Hội Thánh.
                 </p>
                 <a
-                  href="https://www.youtube.com/@hoithanhthuduc/streams"
+                  href="https://www.youtube.com/watch?v=NDztxEAqOIA"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-block mt-4 text-sm font-semibold text-[#1c1b1a] underline decoration-primary underline-offset-4"
@@ -62,7 +62,7 @@ export default function Home() {
               </div>
               <div className="relative w-full aspect-video rounded-sm overflow-hidden border border-[#e6e4df] bg-[#1c1b1a]">
                 <iframe
-                  src="https://www.youtube.com/embed/LqnmAvCswTo"
+                  src="https://www.youtube.com/embed/NDztxEAqOIA"
                   title="Hội Thánh Tin Lành Thủ Đức - Trực Tuyến"
                   className="absolute top-0 left-0 w-full h-full border-0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
