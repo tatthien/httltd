@@ -52,7 +52,7 @@ export default function Home() {
                   Xem lại buổi thờ phượng gần nhất trên kênh YouTube chính thức của Hội Thánh.
                 </p>
                 <a
-                  href="https://www.youtube.com/watch?v=NDztxEAqOIA"
+                  href="https://www.youtube.com/@hoithanhthuduc/streams"
                   target="_blank"
                   rel="noreferrer"
                   className="inline-block mt-4 text-sm font-semibold text-[#1c1b1a] underline decoration-primary underline-offset-4"
